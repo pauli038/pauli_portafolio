@@ -44,6 +44,38 @@
       }
     ]
   },
+  "experience": {
+  "title": "Experiencia ",
+  "subtitle": "Un resumen de mi trayectoria profesional y los roles que he desempeñado.",
+  "list": [
+    {
+      "role": "Asistente de Gestión de Bases de Datos - Proyecto OCRE UNA-DER",
+      "company": "Universidad Nacional",
+      "year": "Feb. 2025 – Actualidad · Remoto",
+      "summary": "Como parte del equipo del Proyecto OCRE, me enfoco en optimizar y depurar bases de datos SQL para garantizar la integridad y calidad de los datos.",
+      "tasks": [
+        "Limpieza y refinamiento de tablas SQL para mejorar la eficiencia y precisión de los datos.",
+        "Revisión y validación de información para asegurar la consistencia y confiabilidad.",
+        "Optimización de archivos Excel mediante automatización y mejoras en la usabilidad.",
+        "Desarrollo de scripts en Python para cargar y transformar datos eficientemente.",
+        "Creación y análisis de reportes en Power BI (según necesidad) para facilitar la visualización de insights clave."
+      ],
+      "technologies": ["MySQL", "SQL", "Python", "Power BI", "Excel"]
+    },
+    {
+      "role": "Desarrolladora Backend",
+      "company": "Proyecto Biblioteca Felipe Díaz Vidaurre: Hogar de Libros",
+      "year": "2024 – 2025",
+      "summary": "Desarrollé APIs RESTful para un sistema de gestión bibliotecaria utilizando NestJS, siguiendo principios de arquitectura backend limpia y escalable.",
+      "tasks": [
+        "Implementé pruebas unitarias e integradas automatizadas con Jest y Supertest.",
+        "Realicé pruebas de seguridad con OWASP ZAP para garantizar la robustez y confiabilidad del sistema."
+      ],
+      "technologies": ["NestJS", "TypeScript", "Jest", "Supertest", "MySQL"]
+    }
+  ]
+},
+
   "projects": {
   "title": "Mis Proyectos",
   "subtitle": "Explora algunos de los proyectos en los que he trabajado, mostrando mis habilidades en análisis de datos y desarrollo web.",

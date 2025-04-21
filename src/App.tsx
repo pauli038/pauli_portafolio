@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import { Toaster } from "sonner";
 import { useTranslation } from 'react-i18next';
+import Experience from './components/Experience';
 
 function App() {
   const { t } = useTranslation();
@@ -18,6 +19,7 @@ function App() {
         <Hero />
         <About />
         <Skills />
+        <Experience />
         <Projects />
         <Contact />
       </main>

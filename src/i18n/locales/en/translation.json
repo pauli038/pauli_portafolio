@@ -45,6 +45,37 @@
       }
     ]
   },
+  "experience": {
+  "title": "Experience",
+  "subtitle": "A summary of my professional journey and the roles I've taken.",
+  "list": [
+    {
+      "role": "Database Management Assistant - Proyecto OCRE UNA-DER",
+      "company": "Universidad Nacional",
+      "year": "Feb. 2025 – Present · Remote",
+      "summary": "As part of the Proyecto OCRE team, I focused on optimizing and cleaning SQL databases to ensure data integrity and quality.",
+      "tasks": [
+        "Cleaning and refining SQL tables to improve efficiency and data accuracy.",
+        "Reviewing and validating information to ensure consistency and reliability.",
+        "Optimizing Excel files by automating processes and enhancing usability.",
+        "Developing Python scripts to efficiently load and transform data.",
+        "Creating and analyzing reports in Power BI (as needed) to facilitate key insights visualization."
+      ],
+      "technologies": ["MySQL", "SQL", "Python", "Power BI", "Excel"]
+    },
+    {
+      "role": "Backend Developer",
+      "company": "Biblioteca Felipe Díaz Vidaurre Project: Hogar de Libros",
+      "year": "2024 – 2025",
+      "summary": "I developed RESTful APIs for a library management system using NestJS, following clean and scalable backend architecture principles.",
+      "tasks": [
+        "Implemented unit and integration tests using Jest and Supertest.",
+        "Performed security testing with OWASP ZAP to ensure system reliability and robustness."
+      ],
+      "technologies": ["NestJS", "Jest", "Supertest", "OWASP ZAP", "MySQL"]
+    }
+  ]
+},
   "projects": {
   "title": "My Projects",
   "subtitle": "Explore some of the projects I've worked on, showcasing my skills in data analysis and web development.",
