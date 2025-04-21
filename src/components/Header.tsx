@@ -1,7 +1,7 @@
 import React from 'react';
 import { Menu, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import DarkMode from './darkmode';
+import DarkMode from './DarkMode..tsx'
 
 
 
