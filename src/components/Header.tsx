@@ -3,6 +3,9 @@ import { Menu, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import DarkMode from './darkmode';
 
+
+
+
 interface NavItem {
   key: string;
   href: string;
@@ -51,7 +54,7 @@ export default function Header() {
               <button onClick={() => changeLanguage('en')}>
                 <img src="https://flagcdn.com/w40/us.png" alt="EN" className="w-6 h-4 rounded shadow" />
               </button>
-              <DarkMode />
+              <DarkMode/>
             </div>
           </div>
 
@@ -83,7 +86,7 @@ export default function Header() {
               <button onClick={() => changeLanguage('en')}>
                 <img src="https://flagcdn.com/w40/us.png" alt="EN" className="w-6 h-4 rounded shadow" />
               </button>
-              <DarkMode />
+              <DarkMode/>
             </div>
           </div>
         )}

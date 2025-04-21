@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 
-export default function DarkMode() {
+export default function darkmode() {
   const [isDark, setIsDark] = useState(() => {
     return localStorage.getItem('theme') === 'dark';
   });
