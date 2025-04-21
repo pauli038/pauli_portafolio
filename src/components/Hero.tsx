@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden mb-10"
+      className="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden mb-10 transition-colors duration-300"
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <img
@@ -19,7 +19,7 @@ export default function Hero() {
 
       <div className="container mx-auto px-4 py-24 md:py-32 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="w-full md:w-1/2 mb-12 md:mb-0">
+          <div className="w-full md:w-1/2 mb-12 md:mb-0 text-white dark:text-white">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
               {t("hero.name")}
             </h1>
@@ -28,7 +28,7 @@ export default function Hero() {
               <a
                 href="/CV-Maria-Paula-Fernandez.pdf"
                 download
-                className="bg-white text-teal-900 font-semibold px-8 py-3 rounded-full hover:bg-teal-100 transition duration-300 text-center"
+                className="bg-white text-teal-900 font-semibold px-8 py-3 rounded-full hover:bg-teal-100 dark:hover:bg-gray-300 transition duration-300 text-center"
               >
                 {t("hero.download_cv")}
               </a>

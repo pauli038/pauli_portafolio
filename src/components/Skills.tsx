@@ -27,17 +27,17 @@ export default function Skills() {
     },
   ];
 
-  const education:any = t("skills.education_list", { returnObjects: true });
+  const education: any = t("skills.education_list", { returnObjects: true });
 
   return (
-    <section id="skills" className="py-24 bg-gradient-to-br from-white to-gray-100">
+    <section id="skills" className="py-24 bg-gradient-to-br from-white to-gray-100 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
       <div className="container mx-auto px-6">
         {/* Título */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-white">
             {t("skills.title")}
           </h2>
-          <p className="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-gray-500 dark:text-gray-300 max-w-2xl mx-auto">
             {t("skills.subtitle")}
           </p>
           <div className="mt-6 flex justify-center">
@@ -47,23 +47,23 @@ export default function Skills() {
 
         {/* Estudios */}
         <div>
-          <h3 className="text-2xl font-semibold text-gray-700 mb-8">
+          <h3 className="text-2xl font-semibold text-gray-700 dark:text-white mb-8">
             {t("skills.education")}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {education.map((edu: any, index: number) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 border border-gray-200"
+                className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 border border-gray-200 dark:border-gray-700"
               >
-                <div className="flex items-center mb-4 text-indigo-700">
+                <div className="flex items-center mb-4 text-indigo-700 dark:text-indigo-300">
                   <GraduationCap className="mr-3" size={26} />
                   <div>
                     <h4 className="text-lg font-bold">{edu.degree}</h4>
-                    <p className="text-sm text-gray-600">{edu.institution}</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">{edu.institution}</p>
                   </div>
                 </div>
-                <p className="text-sm text-gray-500">{edu.year}</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">{edu.year}</p>
               </div>
             ))}
           </div>
@@ -71,20 +71,20 @@ export default function Skills() {
 
         {/* Habilidades técnicas */}
         <div className="mt-20">
-          <h3 className="text-2xl font-semibold text-gray-700 mb-8">
+          <h3 className="text-2xl font-semibold text-gray-700 dark:text-white mb-8">
             {t("skills.technical")}
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {skills.map((skill) => (
               <div
                 key={skill.category}
-                className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 border border-gray-200"
+                className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 border border-gray-200 dark:border-gray-700"
               >
-                <div className="flex items-center mb-4 text-emerald-700">
+                <div className="flex items-center mb-4 text-emerald-700 dark:text-emerald-400">
                   <skill.icon className="mr-3" size={28} />
                   <h4 className="text-xl font-semibold">{skill.category}</h4>
                 </div>
-                <ul className="list-disc list-inside text-gray-600 space-y-1">
+                <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
                   {skill.items.map((item) => (
                     <li key={item}>{item}</li>
                   ))}

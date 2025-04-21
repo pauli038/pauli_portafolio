@@ -12,7 +12,7 @@ function App() {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
       <Toaster richColors position="top-center" />
       <Header />
       <main>
@@ -23,7 +23,7 @@ function App() {
         <Projects />
         <Contact />
       </main>
-      <footer className="bg-teal-700 text-white py-6">
+      <footer className="bg-teal-700 dark:bg-teal-900 text-white py-6 transition-colors">
         <div className="container mx-auto px-6 text-center">
           <p>
             &copy; {new Date().getFullYear()} Maria Paula Fernandez. {t("footer.copyright")}

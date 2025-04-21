@@ -5,7 +5,7 @@ export default function About() {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="w-full md:w-1/2">
@@ -16,10 +16,10 @@ export default function About() {
             />
           </div>
           <div className="w-full md:w-1/2">
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
               {t('about.paragraph1')}
             </p>
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
               {t('about.paragraph2')}
             </p>
           </div>
