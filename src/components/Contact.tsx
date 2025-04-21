@@ -4,17 +4,19 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import emailjs from "@emailjs/browser";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { toast } from "sonner";
-
-
-const contactSchema = z.object({
-  name: z.string().min(2, "Name is too short"),
-  email: z.string().email("Invalid email"),
-  message: z.string().min(10, "Message must be at least 10 characters"),
-});
-
-type ContactFormData = z.infer<typeof contactSchema>;
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation();
+
+  const contactSchema = z.object({
+    name: z.string().min(2, t("contact.form.errors.name")),
+    email: z.string().email(t("contact.form.errors.email")),
+    message: z.string().min(10, t("contact.form.errors.message")),
+  });
+
+  type ContactFormData = z.infer<typeof contactSchema>;
+
   const {
     register,
     handleSubmit,
@@ -36,16 +38,16 @@ export default function Contact() {
         },
         "RwsW0K_jmJETpwk5U"
       );
-  
+
       if (result.status === 200) {
-        toast.success("Message sent successfully! 🚀");
+        toast.success(t("contact.toast.success"));
         reset();
       } else {
-        toast.error("Something went wrong. Please try again.");
+        toast.error(t("contact.toast.error"));
       }
     } catch (error) {
       console.error(error);
-      toast.error("Error sending message. Please check your connection.");
+      toast.error(t("contact.toast.connection"));
     }
   };
 
@@ -54,23 +56,24 @@ export default function Contact() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800">
-            🤝 Let's Connect
+            {t("contact.title")}
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            Whether you have a question, a project in mind, or just want to say
-            hi — feel free to drop a message or connect through my social
-            platforms.
+            {t("contact.subtitle")}
           </p>
           <div className="mt-6 flex justify-center">
             <span className="inline-block w-20 h-1 rounded-full bg-teal-500"></span>
           </div>
         </div>
+
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row gap-12">
             <div className="w-full md:w-1/2">
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                 <div>
-                  <label className="block text-gray-700 mb-2">Name</label>
+                  <label className="block text-gray-700 mb-2">
+                    {t("contact.form.name")}
+                  </label>
                   <input
                     type="text"
                     {...register("name")}
@@ -83,7 +86,9 @@ export default function Contact() {
                   )}
                 </div>
                 <div>
-                  <label className="block text-gray-700 mb-2">Email</label>
+                  <label className="block text-gray-700 mb-2">
+                    {t("contact.form.email")}
+                  </label>
                   <input
                     type="email"
                     {...register("email")}
@@ -96,7 +101,9 @@ export default function Contact() {
                   )}
                 </div>
                 <div>
-                  <label className="block text-gray-700 mb-2">Message</label>
+                  <label className="block text-gray-700 mb-2">
+                    {t("contact.form.message")}
+                  </label>
                   <textarea
                     rows={4}
                     {...register("message")}
@@ -113,16 +120,21 @@ export default function Contact() {
                   disabled={isSubmitting}
                   className="w-full bg-teal-700 text-white py-3 rounded-lg hover:bg-teal-800 transition-colors"
                 >
-                  {isSubmitting ? "Sending..." : "Send Message"}
+                  {isSubmitting
+                    ? t("contact.form.sending")
+                    : t("contact.form.send")}
                 </button>
               </form>
             </div>
+
             <div className="w-full md:w-1/2">
               <div className="bg-white p-8 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-6">Connect With Me</h3>
+                <h3 className="text-xl font-semibold mb-6">
+                  {t("contact.connect.title")}
+                </h3>
                 <div className="space-y-4">
                   <a
-                    href="mailto:mariapaulafernandezmarchena038@gmail.com"
+                    href="mailto:paulafernandezmarchena031@gmail.com"
                     className="flex items-center text-gray-600 hover:text-teal-600"
                   >
                     <Mail className="mr-4" size={24} />
@@ -135,7 +147,7 @@ export default function Contact() {
                     className="flex items-center text-gray-600 hover:text-teal-600"
                   >
                     <Github className="mr-4" size={24} />
-                    GitHub Profile
+                    {t("contact.connect.github")}
                   </a>
                   <a
                     href="https://www.linkedin.com/in/mar%C3%ADa-paula-fern%C3%A1ndez-aa70032a3/"
@@ -144,7 +156,7 @@ export default function Contact() {
                     className="flex items-center text-gray-600 hover:text-teal-600"
                   >
                     <Linkedin className="mr-4" size={24} />
-                    LinkedIn Profile
+                    {t("contact.connect.linkedin")}
                   </a>
                 </div>
               </div>

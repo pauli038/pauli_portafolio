@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "name": "María Paula Fernández Marchena",
+    "description": "Empowering businesses with cutting-edge solutions for a digital future.",
+    "download_cv": "Download CV"
+  },
+  "about": {
+    "paragraph1": "Hello!👋🏻 I’m a young woman passionate about technology and deeply committed to fostering inclusion. From a young age, I’ve been driven by a desire to help others and a fascination with STEM fields.",
+    "paragraph2": "This passion led me to pursue a degree in Systems Engineering, where I’ve built a strong foundation in programming, mastering various languages, architectures, databases, and project management. I’m also eager to continually expand my knowledge and thrive on learning new things. 🚀💜"
+  },
+  "skills": {
+    "title": "Skills & Education",
+    "subtitle": "A journey of growth through code, data, and continuous learning.",
+    "education": "🎓 Education",
+    "technical": "💻 Technical Skills",
+    "categories": {
+      "programming": "Programming",
+      "data": "Data Analysis",
+      "testing": "Testing",
+      "databases": "Databases"
+    },
+    "education_list": [
+      {
+        "degree": "Bachelor of Systems Engineering",
+        "institution": "Universidad Nacional de Costa Rica",
+        "year": "2020 - 2026"
+      },
+      {
+        "degree": "Diplomat Computers Applications Programming",
+        "institution": "Universidad Nacional de Costa Rica",
+        "year": "2020 - 2024"
+      },
+      {
+        "degree": "Introduction to Data Science",
+        "institution": "Cisco Networking Academy",
+        "year": "2025"
+      }
+    ]
+  },
+  "projects": {
+  "title": "My Projects",
+  "subtitle": "Explore some of the projects I've worked on, showcasing my skills in data analysis and web development.",
+  "list": [
+    {
+      "title": "Auth Identity Server",
+      "description": "I worked as a backend developer, responsible for implementing the full authentication and registration system. The web app was developed using C# and .NET following Clean Architecture principles. It is integrated with Identity Server for centralized authentication across multiple projects. The system also includes employee CRUD, role-based access control, and SQL Server integration via Entity Framework.",
+      "technologies": ["C#", ".NET", "Entity Framework", "SQL Server", "Clean Architecture"]
+    },
+    {
+      "title": "Migraine-Analysis",
+      "description": "This project consists of the development of an interactive dashboard in Power BI, based on a clinical dataset of 400 patients suffering from different types of migraines. The objective is to identify relevant patterns in symptoms, migraine types, and patients’ demographic characteristics to support medical analysis and decision-making.",
+      "technologies": ["Power BI", "Microsoft Excel", "Advanced visualizations", "Dataset"]
+    },
+    {
+      "title": "Hogar de Libros",
+      "description": "Hogar de Libros is a digital system that streamlines and modernizes the operations of the Felipe Díaz Vidaurre Library. It simplifies key processes like book loans, returns, and reservations, improving efficiency for both staff and users while promoting better access to library resources. I contributed to the project as a backend developer, focusing on building reliable APIs and database logic to support the system’s core functionalities. Additionally, I developed and executed backend tests to ensure the reliability and performance of the system's core functionalities.",
+      "technologies": ["NestJS", "Supertest", "Jest", "MySQL"]
+    }
+  ],
+  "code": "Code"
+},
+"contact": {
+  "title": "🤝 Let's Connect",
+  "subtitle": "Whether you have a question, a project in mind, or just want to say hi — feel free to drop a message or connect through my social platforms.",
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "errors": {
+      "name": "Name is too short",
+      "email": "Invalid email",
+      "message": "Message must be at least 10 characters"
+    }
+  },
+  "toast": {
+    "success": "Message sent successfully! 🚀",
+    "error": "Something went wrong. Please try again.",
+    "connection": "Error sending message. Please check your connection."
+  },
+  "connect": {
+    "title": "Connect With Me",
+    "github": "GitHub Profile",
+    "linkedin": "LinkedIn Profile"
+  }
+},
+"footer": {
+  "copyright": "All rights reserved."
+}
+
+
+
+}

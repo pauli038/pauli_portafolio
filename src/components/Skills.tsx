@@ -1,60 +1,44 @@
+import { useTranslation } from "react-i18next";
 import { Database, LineChart, Brain, Code, GraduationCap } from "lucide-react";
 
-const skills = [
-  {
-    category: "Programming",
-    icon: Code,
-    items: ["Python", "NestJS","C#", "SQL"],
-  },
-  {
-    category: "Data Analysist",
-    icon: LineChart,
-    items: ["Pandas","Power BI","Microsoft Excel"],
-  },
-  {
-    category: "Testing",
-    icon: Brain,
-    items: ["Jest", "Supertest","Owasp", "Postman"],
-  },
-  {
-    category: "Databases",
-    icon: Database,
-    items: ["SQL Server", "MySQL"],
-  },
-];
-
-const education = [
-  {
-    degree: "Bachelor of Systems Engineering",
-    institution: "Universidad Nacional de Costa Rica",
-    year: "2020 - 2026",
-  },
-  {
-    degree: "Diplomat Computers Applications Programming",
-    institution: "Universidad Nacional de Costa Rica",
-    year: "2020-2024",
-  },
-  {
-    degree: "Introduction to Data Science",
-    institution: "cisco Networking Academy",
-    year: "2025",
-  },
-];
-
 export default function Skills() {
+  const { t } = useTranslation();
+
+  const skills = [
+    {
+      category: t("skills.categories.programming"),
+      icon: Code,
+      items: ["Python", "NestJS", "C#", "SQL"],
+    },
+    {
+      category: t("skills.categories.data"),
+      icon: LineChart,
+      items: ["Pandas", "Power BI", "Microsoft Excel"],
+    },
+    {
+      category: t("skills.categories.testing"),
+      icon: Brain,
+      items: ["Jest", "Supertest", "Owasp", "Postman"],
+    },
+    {
+      category: t("skills.categories.databases"),
+      icon: Database,
+      items: ["SQL Server", "MySQL"],
+    },
+  ];
+
+  const education:any = t("skills.education_list", { returnObjects: true });
+
   return (
-    <section
-      id="skills"
-      className="py-24 bg-gradient-to-br from-white to-gray-100"
-    >
+    <section id="skills" className="py-24 bg-gradient-to-br from-white to-gray-100">
       <div className="container mx-auto px-6">
         {/* Título */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800">
-             Skills & Education
+            {t("skills.title")}
           </h2>
           <p className="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
-            A journey of growth through code, data, and continuous learning.
+            {t("skills.subtitle")}
           </p>
           <div className="mt-6 flex justify-center">
             <span className="inline-block w-20 h-1 rounded-full bg-emerald-500"></span>
@@ -64,10 +48,10 @@ export default function Skills() {
         {/* Estudios */}
         <div>
           <h3 className="text-2xl font-semibold text-gray-700 mb-8">
-            🎓 Education
+            {t("skills.education")}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {education.map((edu, index) => (
+            {education.map((edu: any, index: number) => (
               <div
                 key={index}
                 className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 border border-gray-200"
@@ -84,10 +68,11 @@ export default function Skills() {
             ))}
           </div>
         </div>
+
         {/* Habilidades técnicas */}
         <div className="mt-20">
           <h3 className="text-2xl font-semibold text-gray-700 mb-8">
-            💻 Technical Skills
+            {t("skills.technical")}
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {skills.map((skill) => (

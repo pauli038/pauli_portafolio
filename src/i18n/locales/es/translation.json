@@ -1,0 +1,101 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "name": "María Paula Fernández Marchena",
+    "description": "Impulsando negocios con soluciones innovadoras para un futuro digital.",
+    "download_cv": "Descargar CV"
+  },
+  "about": {
+    "paragraph1": "¡Hola!👋🏻 Soy una joven apasionada por la tecnología y profundamente comprometida con fomentar la inclusión. Desde pequeña, he sentido un gran deseo de ayudar a los demás y una fascinación por las áreas STEM.",
+    "paragraph2": "Esta pasión me llevó a estudiar Ingeniería en Sistemas, donde he construido una base sólida en programación, dominando diversos lenguajes, arquitecturas, bases de datos y gestión de proyectos. También estoy siempre dispuesta a seguir aprendiendo y disfruto adquirir nuevos conocimientos. 🚀💜"
+  },
+  "skills": {
+    "title": "Habilidades y Educación",
+    "subtitle": "Un camino de crecimiento a través del código, los datos y el aprendizaje continuo.",
+    "education": "🎓 Educación",
+    "technical": "💻 Habilidades Técnicas",
+    "categories": {
+      "programming": "Programación",
+      "data": "Análisis de Datos",
+      "testing": "Pruebas",
+      "databases": "Bases de Datos"
+    },
+    "education_list": [
+      {
+        "degree": "Bachillerato en Ingeniería en Sistemas",
+        "institution": "Universidad Nacional de Costa Rica",
+        "year": "2020 - 2026"
+      },
+      {
+        "degree": "Diplomado en Programación de Aplicaciones Informáticas",
+        "institution": "Universidad Nacional de Costa Rica",
+        "year": "2020 - 2024"
+      },
+      {
+        "degree": "Introducción a la Ciencia de Datos",
+        "institution": "Cisco Networking Academy",
+        "year": "2025"
+      }
+    ]
+  },
+  "projects": {
+  "title": "Mis Proyectos",
+  "subtitle": "Explora algunos de los proyectos en los que he trabajado, mostrando mis habilidades en análisis de datos y desarrollo web.",
+  "list": [
+    {
+      "title": "Servidor de Autenticación",
+      "description": "Trabajé como desarrolladora backend, encargada de implementar todo el sistema de autenticación y registro. La aplicación web fue desarrollada en C# y .NET siguiendo principios de Clean Architecture. Está integrada con Identity Server para una autenticación centralizada en múltiples proyectos. El sistema también incluye CRUD de empleados, control de acceso por roles e integración con SQL Server mediante Entity Framework.",
+      "technologies": ["C#", ".NET", "Entity Framework", "SQL Server", "Clean Architecture"]
+    },
+    {
+      "title": "Análisis de Migrañas",
+      "description": "Este proyecto consiste en el desarrollo de un dashboard interactivo en Power BI, basado en un conjunto de datos clínicos de 400 pacientes con diferentes tipos de migrañas. El objetivo es identificar patrones relevantes en síntomas, tipos de migraña y características demográficas de los pacientes para apoyar el análisis y la toma de decisiones médicas.",
+      "technologies": ["Power BI", "Microsoft Excel", "Visualizaciones avanzadas", "Dataset"]
+    },
+    {
+      "title": "Hogar de Libros",
+      "description": "Hogar de Libros es un sistema digital que moderniza y optimiza las operaciones de la Biblioteca Felipe Díaz Vidaurre. Simplifica procesos clave como préstamos, devoluciones y reservas de libros, mejorando la eficiencia del personal y el acceso de los usuarios. Participé como desarrolladora backend, enfocándome en construir APIs confiables y lógica de base de datos. Además, desarrollé y ejecuté pruebas backend para asegurar el rendimiento del sistema.",
+      "technologies": ["NestJS", "Supertest", "Jest", "MySQL"]
+    }
+  ],
+  "code": "Código"
+},
+"contact": {
+  "title": "🤝 Conectemos",
+  "subtitle": "Ya sea que tengas una pregunta, un proyecto en mente o solo quieras saludar, no dudes en enviarme un mensaje o conectarte por mis redes sociales.",
+  "form": {
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "errors": {
+      "name": "El nombre es demasiado corto",
+      "email": "Correo electrónico inválido",
+      "message": "El mensaje debe tener al menos 10 caracteres"
+    }
+  },
+  "toast": {
+    "success": "¡Mensaje enviado con éxito! 🚀",
+    "error": "Algo salió mal. Por favor, inténtalo de nuevo.",
+    "connection": "Error al enviar el mensaje. Verifica tu conexión."
+  },
+  "connect": {
+    "title": "Conecta conmigo",
+    "github": "Perfil de GitHub",
+    "linkedin": "Perfil de LinkedIn"
+  }
+},
+"footer": {
+  "copyright": "Todos los derechos reservados."
+}
+
+
+
+}
